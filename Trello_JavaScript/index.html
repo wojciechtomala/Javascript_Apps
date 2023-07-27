@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./drag.js" defer></script>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="board">
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Add todo...">
+            <button type="submit">Add +</button>
+        </form>
+
+        <div class="schedule">
+            <div class="todo-card" id="todo-card">
+                <h3 class="header">To do:</h3>
+                <p class="task" draggable="true">Simple Todo Javascript list like Trello</p>
+                <p class="task" draggable="true">Task</p>
+                <p class="task" draggable="true">Another task</p>
+            </div>
+
+            <div class="todo-card" id="todo-card">
+                <h3 class="header">Working on:</h3>
+                <p class="task" draggable="true">Currentluy working on X project</p>
+                <p class="task" draggable="true">Fullstack MERN App (Mongo, Express, React, NodeJS)</p>
+                <p class="task" draggable="true">Unfinished</p>
+            </div>
+
+            <div class="todo-card" id="todo-card">
+                <h3 class="header">Finished:</h3>
+                <p class="task" draggable="true">The finished task</p>
+                <p class="task" draggable="true">Learning Javascript</p>
+                <p class="task" draggable="true">Completed Task</p>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
